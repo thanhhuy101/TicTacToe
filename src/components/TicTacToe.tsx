@@ -94,6 +94,7 @@ const TicTacToe = () => {
           Tic Tac Toe
         </h1>
 
+        {/* History of 2 players */}
         <div className="flex justify-between mb-8">
           <div className="text-center">
             <div className="text-gray-400 text-sm">Player X</div>
