@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# Tic Tac Toe with React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The game is played on a 3x3 grid and the first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Two players in-game
+2. Display the winner with notification text
+3. Reset the game
+4. Scoreboard with history of 2 players
 
-## Expanding the ESLint configuration
+# How to install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get a local copy up and running, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```sh
+git clone https://github.com/thanhhuy101/TicTacToe.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Install the dependencies:**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm install
 ```
+
+3. **Start the development server:**
+
+```sh
+npm run dev
+```
+
+The app should now be running on http://localhost:5173
+
+# Deploy
+
+https://tic-tac-toe-seven-dusky-30.vercel.app/
